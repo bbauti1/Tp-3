@@ -1,12 +1,12 @@
-console.log("conectado")
-let nuevaLista = document.createElement("ul")
-document.body.appendChild(nuevaLista)
-let listaElemento1 = document.createElement("li")
-listaElemento1.textContent = "Primer Item List"
-nuevaLista.appendChild(listaElemento1)
-let listaElemento2 = document.createElement("li")
-listaElemento2.textContent = "Segundo Item List"
-nuevaLista.appendChild(listaElemento2)
+// console.log("conectado")
+// let nuevaLista = document.createElement("ul")
+// document.body.appendChild(nuevaLista)
+// let listaElemento1 = document.createElement("li")
+// listaElemento1.textContent = "Primer Item List"
+// nuevaLista.appendChild(listaElemento1)
+// let listaElemento2 = document.createElement("li")
+// listaElemento2.textContent = "Segundo Item List"
+// nuevaLista.appendChild(listaElemento2)
 let sumar = document.getElementById("sumar")
 let resta = document.getElementById("restar")
 let cont = document.getElementById("contador")
@@ -41,4 +41,3 @@ function restAr(){
    
 }
 
-console.log(counter)

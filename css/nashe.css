@@ -1,0 +1,438 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    height: 100vh;
+}
+
+.contenedor{
+    padding: 30px;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+}
+
+.pa{
+    position: absolute;
+}
+
+.pr{
+    position: relative;
+}
+
+.centgrid{
+    display: grid;
+    place-items: center;
+}
+
+.centflex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex100{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sombra{
+    box-shadow: 0 0 10px -3px rgba(0, 0, 0, 0.5);
+}
+
+.img_fit{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.img_fit2{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+.volver{
+    font-size: 30px;
+    left: 15px;
+    top: 15px;
+    height: 30px;
+    width: 30px;
+    background-color: rgba(255, 255, 255, 0.274);
+    border-radius: 50%;
+    backdrop-filter: blur(5px);
+    color: black;
+}
+
+.pd25{
+    padding: 20px;
+}
+
+
+.seccion1{
+    position: relative;
+    background-color: aquamarine;
+    height: 400px;
+    width: 100%;
+    
+    & .saludo{
+        height: 100px;
+        width: 300px;
+        position: absolute;
+        bottom: 30px;
+        left: 5%;
+        color: white;
+    }
+
+    & .volador{
+        display: flex;
+        position: absolute;
+        height: 50px;
+        width: 90%;
+        bottom: -25px;
+        left: 5%;
+
+    }
+}
+
+
+main{
+    height: 30% auto;
+    width: 100%;
+    padding: 10px;
+    
+
+    .resultados{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+  
+        article.resto{
+            height: 100px;
+            width: 100%;
+            color: black;
+            font-size: 30pt;
+            background-color: azure;
+            position: relative;
+
+            .img-resto{
+                background-color: bisque;
+                height: 100%;
+                width: 50%;
+                position: absolute;
+                left: 0;
+            }
+            .datos-resto{
+                background-color: white;
+                height: 100%;
+                width: 60%;
+                font-size: 16px;
+                position: absolute;
+                right: 0;
+                border-bottom-left-radius: 20px;
+                box-shadow: 0 0 10px -2px black;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            .datos-icons{
+                bottom: -2%;
+                height: 30%;
+                width: 100%;
+                padding: 10px;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row;
+                align-items: center;
+                color: aqua;
+            }
+            .puntu-resto{
+                position: absolute;
+                height: 40px;
+                width: 40px;
+                background-color: aqua;
+                font-size: 22px;
+                display: grid;
+                place-items: center;
+                right: -10px;
+                top: -10px;
+                border-radius: 10px 0;
+            }
+        }
+    }
+}
+
+
+
+.a1{
+    display: grid;
+    place-items: center;
+    background-color: aquamarine;
+    height: 50px;
+    width: 50px;
+}
+
+.buscador{
+    height: 100%;
+    width: 85%;
+    background-color: tomato;
+}
+
+.categorias{
+    height: 30%;
+    width: 90%;
+    padding: 5%;
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    padding-left: 90px;
+    display: flex;
+    gap: 20px;
+    overflow-y: hidden;
+    overflow-y: scroll;
+    
+
+    .item_cat{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 80px;
+        width: 80px;
+    }
+}
+
+.buscar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 8%;
+    background-color: teal;
+}
+
+.volador input[type=search]{
+    height: 100%;
+    width: calc(100% - 120px) ;
+}
+
+.volador input[type=submit]{
+    height: 100%;
+    width: 50px ;
+}
+
+/* .imagenes_resto{
+
+}
+
+.datos_resto{} */
+
+
+
+.resto_image{
+    height: 40%;
+    width: 100%;
+    background-color: yellow;
+}
+
+.resto_precio{
+    height: 40px;
+    width: auto;
+    background-color: turquoise;
+    right: 15px;
+    bottom: -15px;
+    border-radius: 8px 0;
+    padding: 8px;
+    font-weight: bold;
+    color: white;
+}
+.resto_desc{
+    height: auto;
+    min-height: 60%;
+    width: 100%;
+    /* background-color: gray; */
+    padding: 15px;
+    padding-top: 30px;
+    padding-bottom: 75px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.resto_menu{
+    position: fixed;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+    background-color: white; /* temporario*/
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.btn_menu{
+    /* background-color: violet; */
+    flex: 1;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: black;
+}
+
+
+.btn_menu.active{
+    border-top: solid 4px aquamarine;
+}
+
+.titulo_menu{
+    height: 60px;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.contenedor_tarjetas{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+    padding-bottom: 75px;
+
+    .tarjeta{
+        display: flex;
+        height: 150px;
+        
+    }
+
+    .foto{
+        height: 150px;
+        flex: 0 0 150px;
+    }
+
+    .tag{
+        height: 40px;
+        width: auto;
+        background-color: turquoise;
+        right: -15px;
+        bottom: 15px;
+        border-radius: 8px 0;
+        padding: 8px;
+        font-weight: bold;
+        color: white;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .plato_desc{
+        height: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: black;
+    }
+}
+
+.seccion-image{
+    position: relative;
+    background-color: aquamarine;
+    height: 400px;
+    width: 100%;
+
+    .price-plato{
+        height: 15%;
+        width: auto;
+        background-color: turquoise;
+        bottom: 8%;
+        right: 12%;
+        border-radius: 8px 0;
+        padding: 8px;
+        font-weight: bold;
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+    }
+    .titulo-plato{
+        height: 30%;
+        width: 70%;
+        position: absolute;
+        bottom: -10px;
+        left: 5%;
+        color: white;
+       
+    }
+
+}
+
+.platito{
+    padding: 70px;
+    padding-top: 60px;
+    height: 51%;
+    width: 100%;
+}
+.button-carrito{
+    position: relative;
+    height: 5%;
+    width: 100%;
+    gap: 2px;
+
+    .botonn{
+        position: absolute;
+        bottom: 180%;
+        color: #fff !important;
+        font-size: 18px;
+        font-weight: 500;
+        padding: 0.5em 1.2em;
+        background-color: turquoise;
+        position: relative;
+        background-color: turquoise;
+        outline: 1px solid;
+        outline-color: rgba(49, 138, 172, 0.4);
+        transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+
+}
+
+
+.botonn:hover {
+    box-shadow: inset 0 0 20px rgba(49, 138, 172, 0.5), 0 0 20px rgba(49, 138, 172, 0.4);
+    outline-color: rgba(49, 138, 172, 0);
+    outline-offset: 80px;
+    text-shadow: 1px 1px 6px #fff;
+}
+
+@media (orientation: landscape){
+
+    main{
+        .resultados{
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            .resto{
+                flex: 0 0 calc(50% -10px);
+                background-color: springgreen;
+            }
+        }
+
+    }
+
+    .contenedor_tarjetas{
+        flex-direction: row;
+        flex-wrap: wrap;
+        .tarjeta{
+            flex: 0 0 calc(50% - 10px);
+        }
+    }
+
+    .seccion-image{
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        .titulo-plato{
+            position: absolute;
+            bottom: -10%;
+        }
+    }
+}

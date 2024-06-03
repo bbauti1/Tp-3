@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/nashe.css">
     <link rel="stylesheet" href="css/material-icons.css">
     <title>Document</title>
 </head>
@@ -23,8 +23,11 @@
         <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum exercitationem tempore quo doloremque laudantium laboriosam repudiandae voluptates? Id, sapiente quam ab voluptatibus, unde hic tempore accusamus voluptas earum, repudiandae minus!</span>
     </section>
     <div class="button-carrito centflex">
-        <button class="botonn">- 2 +</button>
+        <button class="botonn" id="restar" onclick="restAr()">-</button>
+        <p class="botonn" id="contador">8</p>
+        <button class="botonn" id="sumar" onclick="suMar()">+</button>
         <button class="botonn">AGREGAR CARRITO</button>
     </div>
+    <script src="js/acciones.js"></script>
 </body>
 </html>
