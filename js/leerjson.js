@@ -45,8 +45,12 @@ fetch('json/restaurantes.json')
                      <a href="resto.html"><img src="${data[i].avatar.src}" alt="" class="img_fit"></a>
                 </div>
                 <div class="datos-resto pa">
-                   ${data[i].name} <br>
-                   <span>${data[i].horario} </span>
+                   <div class="vossabesperro">
+                        <h3>${data[i].name} </h3>
+                        <span> ${data[i].bio}</span>
+                        <br>
+                        <span>${data[i].horario} </span>
+                   </div>
                    <div class="datos-icons pr">
                         <a class="item_cat">
                             <div class="iconos icon_S">${puntu}</div>
