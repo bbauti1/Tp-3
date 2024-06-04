@@ -8,7 +8,6 @@ fetch('json/restaurantes.json')
     for (let i=0; i < 100; i++){
         let puntu = ""
         let rango = ""
-
         if (data[i].rango === "4"){
             rango =  "euro euro euro euro"
         }
@@ -58,7 +57,7 @@ fetch('json/restaurantes.json')
                    </div>
                 </div>
                 <div class="puntu-resto">
-                    
+                    ${data[i].rango}
                 </div>
             </article>`  
     }
